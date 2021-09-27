@@ -227,7 +227,7 @@ header.fixed .logo {
   line-height: 0;
   margin-bottom: 0;
   padding: 30px 26px;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
