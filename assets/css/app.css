@@ -44,11 +44,8 @@ RESPONSIVE MEDIA QUERIES
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bg1: #f4feff;
   --sec-padding: 6rem 0;
   --font-family1: "Nunito", sans-serif;
@@ -66,14 +63,11 @@ li {
   list-style: none;
 }
 
-a,
-a:hover {
+a, a:hover {
   text-decoration: none;
 }
 
-.btn:focus,
-btn:hover,
-button:focus {
+.btn:focus, btn:hover, button:focus {
   outline: 0;
   box-shadow: 0 0 0 0rem rgb(0 123 255 / 25%);
   color: var(--white) !important;
@@ -92,12 +86,7 @@ button:focus {
   color: var(--white) !important;
 }
 
-h1,
-h2,
-h2,
-h4,
-h5,
-h6 {
+h1, h2, h2, h4, h5, h6 {
   font-family: var(--font-family1);
   color: #2b044d;
   font-weight: 700;
@@ -157,8 +146,7 @@ header nav ul li a {
   font-weight: 600;
 }
 
-header nav ul li a:hover,
-header nav ul li a.active {
+header nav ul li a:hover, header nav ul li a.active {
   text-decoration: none;
   transition: 0.7s;
 }
@@ -179,14 +167,14 @@ header.fixed {
   backdrop-filter: blur(20px);
   padding: 0px 100px;
   box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%);
-
 }
 
 header.fixed .logo img {
   width: 120px;
   margin-top: 3px;
 }
-header.fixed  .navv ul li{
+
+header.fixed .navv ul li {
   margin: 0px 0!important;
 }
 
@@ -326,8 +314,7 @@ header.fixed .logo {
   position: relative;
 }
 
-#services .service-icon span,
-#services .service-icon i {
+#services .service-icon span, #services .service-icon i {
   position: relative;
   color: var(--white);
   font-size: 40px;
@@ -376,8 +363,7 @@ header.fixed .logo {
   min-width: 277px;
 }
 
-#services .services-caption.active,
-#services .services-caption:hover {
+#services .services-caption.active, #services .services-caption:hover {
   border: 1px solid #b8a2ff;
 }
 
@@ -648,8 +634,7 @@ header.fixed .logo {
   height: 46px;
 }
 
-#contact form input:focus,
-#contact form textarea:focus {
+#contact form input:focus, #contact form textarea:focus {
   border: 1px solid #835ef8;
   box-shadow: none !important;
 }
@@ -738,10 +723,7 @@ header.fixed .logo {
   background: #f9f9fe;
 }
 
-input:focus,
-input:focus,
-textarea,
-textarea:focus {
+input:focus, input:focus, textarea, textarea:focus {
   outline: 0;
 }
 
@@ -791,8 +773,7 @@ textarea:focus {
 
 @media (max-width: 500px) {
   /* Banner content media queries */
-  .banner__content,
-  .buttons {
+  .banner__content, .buttons {
     text-align: left;
   }
   .banner__content h1 {
@@ -887,36 +868,42 @@ textarea:focus {
     font-size: 35px;
     line-height: 74px;
   }
-
-
   header .logo {
     top: 15px;
-}
-
+  }
   header nav {
     position: fixed;
     top: 0;
     left: -350px;
     height: 100vh;
-    width: 350px;
+    width: 320px;
     background: rgb(255, 255, 255);
     transition: left 0.5s ease 0s;
   }
   header nav ul {
     display: block;
     text-align: center;
-    padding: 40px 27px 50px 27px;
+    padding: 76px 27px 50px 27px;
     cursor: pointer;
   }
-  header nav ul li:not(:last-child).active,
-  header nav ul li:not(:last-child):hover {
+  header nav ul:before {
+    content: "";
+    display: block;
+    background: url('../media/logo.webp') no-repeat;
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 31px;
+    left: 67px;
+  }
+  header nav ul li:not(:last-child).active, header nav ul li:not(:last-child):hover {
     background-color: #d852e8;
     color: var(--white);
   }
-  header nav ul li:hover > a {
+  header nav ul li:hover>a {
     color: var(--white) !important;
   }
-  header nav ul li.active > a {
+  header nav ul li.active>a {
     color: var(--white) !important;
   }
   header nav ul li a {
@@ -931,7 +918,7 @@ textarea:focus {
     width: 6px;
   }
   .navv::-webkit-scrollbar-track {
-    background-color:  #c0c0c04b;
+    background-color: #c0c0c04b;
     border-radius: 10px;
   }
   .navv::-webkit-scrollbar-thumb {
@@ -956,11 +943,13 @@ textarea:focus {
     position: fixed;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
-    padding: 7px 18px;
+    padding: 0px 18px;
     box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%);
   }
   header.fixed .logo img {
     width: 120px;
-    margin-top: 0px;
+  }
+  header.fixed .logo {
+    top: 12px;
   }
 }
