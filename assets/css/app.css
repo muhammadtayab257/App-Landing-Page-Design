@@ -14,7 +14,6 @@ CONTACT
 RESPONSIVE MEDIA QUERIES
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900|Poppins:300,400,500,600,700,800,900&display=swap");
 :root {
   --blue: #007bff;
@@ -78,16 +77,18 @@ a, a:hover {
 }
 
 .btn-bg1 {
+  padding: 11px 15px;
+  border-radius: 5px;
   border: 1px solid #d852e8;
-  padding: 0;
-}
-
-.btn-bg1 a {
+  font-family: nunito;
+  font-size: 16px;
+  font-weight: 600;
   color: #450b78;
 }
 
 .btn-bg1:hover {
   background-color: #d852e8;
+  color: #fff;
 }
 
 .btn-bg1:hover a {
@@ -154,15 +155,8 @@ header nav ul li a {
   font-weight: 600;
 }
 
-header nav ul li a.active {
-      background: #d852e8;
-    padding: 9px 18px;
-    color: #fff;
-}
-
 header nav ul li a:hover, header nav ul li a.active {
   text-decoration: none;
-  transition: 0.7s;
 }
 
 .menu-toggle {
@@ -238,6 +232,10 @@ header.fixed .logo {
   border: 0;
   overflow: hidden;
   margin: 0;
+}
+
+.demo_btn:hover {
+  color: #fff;
 }
 
 .trial_btn {
@@ -874,6 +872,14 @@ input:focus, input:focus, textarea, textarea:focus {
   }
 }
 
+@media(min-width:991px) {
+  header nav ul li a.active {
+    background: #d852e8;
+    padding: 9px 18px;
+    color: #fff;
+  }
+}
+
 @media (max-width: 991px) {
   header {
     padding: 1px 18px;
@@ -940,18 +946,6 @@ input:focus, input:focus, textarea, textarea:focus {
   .navv::-webkit-scrollbar-thumb {
     border-radius: 10px;
   }
-  /* .overlay.active {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    -webkit-transition: all ease 0.3s;
-    visibility: visible;
-  } */
   header {
     background: #fff;
   }
