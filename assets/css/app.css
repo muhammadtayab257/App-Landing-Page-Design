@@ -78,12 +78,20 @@ a, a:hover {
 }
 
 .btn-bg1 {
-  background: #d852e8;
+  border: 1px solid #d852e8;
   padding: 0;
 }
 
 .btn-bg1 a {
-  color: var(--white) !important;
+  color: #450b78;
+}
+
+.btn-bg1:hover {
+  background-color: #d852e8;
+}
+
+.btn-bg1:hover a {
+  color: #fff;
 }
 
 h1, h2, h2, h4, h5, h6 {
@@ -146,6 +154,12 @@ header nav ul li a {
   font-weight: 600;
 }
 
+header nav ul li a.active {
+      background: #d852e8;
+    padding: 9px 18px;
+    color: #fff;
+}
+
 header nav ul li a:hover, header nav ul li a.active {
   text-decoration: none;
   transition: 0.7s;
@@ -193,14 +207,15 @@ header.fixed .logo {
 
 .banner__content h1 {
   font-size: 60px;
+  font-weight: 800;
   color: #2b044d;
   margin-top: 20px;
 }
 
 .banner__content p {
-  font-size: 16px !important;
+  font-size: 17px !important;
   color: #707b8e;
-  line-height: 29px;
+  line-height: 30px;
 }
 
 .demo_btn {
@@ -254,7 +269,8 @@ header.fixed .logo {
 
 .app_features h2 {
   font-size: 43px;
-  line-height: 50px;
+  font-weight: 700;
+  line-height: 54px;
 }
 
 .app_features .icon-box .icon {
@@ -458,8 +474,8 @@ header.fixed .logo {
 .available-app-area .app-caption .section-tittle3 h2 {
   color: var(--white);
   margin-bottom: 40px;
-  font-weight: 600;
-  font-size: 45px;
+  font-weight: 700;
+  font-size: 46px;
   line-height: 1.2;
 }
 
