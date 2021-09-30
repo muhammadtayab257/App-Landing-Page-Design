@@ -171,10 +171,12 @@ header nav ul li a:hover, header nav ul li a.active {
 
 header.fixed {
   position: fixed;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px);
+  /* background: rgba(255, 255, 255, 0.7); */
+  background: #fff;
+  /* backdrop-filter: blur(20px); */
   padding: 0px 100px;
-  box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%);
+  /* box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%); */
+  box-shadow: 0 0 25px rgb(140 152 164 / 25%);
 }
 
 header.fixed .logo img {
