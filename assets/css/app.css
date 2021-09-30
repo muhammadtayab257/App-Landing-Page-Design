@@ -185,7 +185,7 @@ header.fixed .logo img {
 }
 
 header.fixed .navv ul li {
-  margin: 0px 0!important;
+  margin: 12px 0!important;
 }
 
 header.fixed .logo {
@@ -907,7 +907,7 @@ input:focus, input:focus, textarea, textarea:focus {
   header nav ul {
     display: block;
     text-align: center;
-    padding: 76px 27px 50px 27px;
+    padding: 92px 27px 50px 27px;
     cursor: pointer;
   }
   header nav ul:before {
@@ -921,7 +921,7 @@ input:focus, input:focus, textarea, textarea:focus {
     left: 67px;
   }
   header nav ul li:not(:last-child).active, header nav ul li:not(:last-child):hover {
-    background-color: #d852e8;
+    background-color: #d852e89e;
     color: var(--white);
   }
   header nav ul li:hover>a {
@@ -953,8 +953,6 @@ input:focus, input:focus, textarea, textarea:focus {
   }
   header.fixed {
     position: fixed;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(20px);
     padding: 0px 18px;
     box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%);
   }
