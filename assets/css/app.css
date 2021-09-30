@@ -318,32 +318,9 @@ header.fixed .logo {
   text-align: center;
 }
 
-#services .services-caption .service-icon {
-  display: inline-block;
-  position: relative;
-}
-
-#services .service-icon span, #services .service-icon i {
-  position: relative;
-  color: var(--white);
-  font-size: 40px;
-  height: 95px;
-  width: 95px;
-  display: block;
-  line-height: 101px;
-  border-radius: 50%;
-  text-align: center;
-  background: #e88cea;
-  margin-bottom: 42px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
 #services .services-caption {
   background: #fff;
-  padding: 84px 10px 56px;
+  padding: 50px 10px 50px;
   border: 1px solid transparent;
   border-radius: 7px;
   -webkit-transition: 0.5s;
@@ -372,8 +349,8 @@ header.fixed .logo {
   min-width: 277px;
 }
 
-#services .services-caption.active, #services .services-caption:hover {
-  border: 1px solid #b8a2ff;
+#services .services-caption:hover {
+  box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%);
 }
 
 .services-caption.active .service-icon span {
@@ -382,22 +359,6 @@ header.fixed .logo {
 
 .services-caption.services-caption:hover .service-icon span {
   background: #835ef8 !important;
-}
-
-.services-caption .service-icon::before {
-  background-image: url("/assets/media/before-div.webp");
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 135px;
-  position: absolute;
-  right: -29px;
-  top: -40px;
-  /* z-index: 0; */
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 
 /* ==========================
