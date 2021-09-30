@@ -171,21 +171,14 @@ header nav ul li a:hover, header nav ul li a.active {
 
 header.fixed {
   position: fixed;
-  /* background: rgba(255, 255, 255, 0.7); */
   background: #fff;
-  /* backdrop-filter: blur(20px); */
   padding: 0px 100px;
-  /* box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%); */
-  box-shadow: 0 0 25px rgb(140 152 164 / 25%);
+  box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%);
 }
 
 header.fixed .logo img {
   width: 120px;
   margin-top: 3px;
-}
-
-header.fixed .navv ul li {
-  margin: 12px 0!important;
 }
 
 header.fixed .logo {
@@ -880,6 +873,9 @@ input:focus, input:focus, textarea, textarea:focus {
     padding: 9px 18px;
     color: #fff;
   }
+  header.fixed .navv ul li {
+    margin: 0px 0!important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -907,7 +903,7 @@ input:focus, input:focus, textarea, textarea:focus {
   header nav ul {
     display: block;
     text-align: center;
-    padding: 92px 27px 50px 27px;
+    padding: 76px 27px 50px 27px;
     cursor: pointer;
   }
   header nav ul:before {
@@ -921,7 +917,7 @@ input:focus, input:focus, textarea, textarea:focus {
     left: 67px;
   }
   header nav ul li:not(:last-child).active, header nav ul li:not(:last-child):hover {
-    background-color: #d852e89e;
+    background-color: #d852e8;
     color: var(--white);
   }
   header nav ul li:hover>a {
@@ -953,6 +949,8 @@ input:focus, input:focus, textarea, textarea:focus {
   }
   header.fixed {
     position: fixed;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
     padding: 0px 18px;
     box-shadow: 0 8px 34px 2px rgb(91 91 91 / 15%);
   }
